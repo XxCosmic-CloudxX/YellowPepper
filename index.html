@@ -1,91 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Project</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="banner">
-    </div>
-    <div id="content">
-        <div class="heading">
-            <h1 id="title">Shoe Brand Survey</h1>
-            <p id="description">We're conducting a survey to see which shoe brand is the most popular in your area</p>
-        </div>
-        <div class="form">
-            <form action="URL" id="survey-form">
-                <div id="fName">
-                    <label for="fName" id="name-label">First Name: </label>
-                    <input type="text" name="fName" id="name" placeholder="First Name" required>
-                </div>
-                <div id="lName">
-                    <label for="lName" id="lName-label">Last Name: </label>
-                    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-                </div>
-                <div>
-                    <label for="email" id="email-label">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="JohnDoe@email.com" required>
-                </div>
-                <div class="number">
-                    <label for="number" id="number-label">Phone Number: </label>
-                    <input type="number" name="number" id="number" placeholder="0000000000" min="0000000000"
-                        max="9999999999" required>
-                </div>
-                <div class="mOrF">
-                    <label for="mOrF">Gender: </label>
-                    <select name="mOrF" id="dropdown">
-                        <option value="Female">Female</option>
-                        <option value="Male">Male</option>
-                        <option value="Non-Binary">Non-Binary</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="radio1">
-                    <p>What style would you say you wear the most?</p>
-                    <input type="radio" name="wear" id="street" value="street">
-                    <label for="street">Street</label>
-                    <input type="radio" name="wear" id="luxury" value="luxury">
-                    <label for="luxury">luxury</label>
-                    <input type="radio" name="wear" id="fashion" value="fashion">
-                    <label for="fashion">Fashion</label>
-                    <input type="radio" name="wear" id="outdoor" value="outdoor">
-                    <label for="outdoor">Outdoor</label>
-                    <input type="radio" name="wear" id="fitness" value="fitness">
-                    <label for="fitness">Fitness</label>
-                </div>
-                <div class="radio">
-                    <p>Which Brands do you wear the most?</p>
-                    <input type="radio" value="vans" name="would">
-                    <label for="vans" class="popular">Vans</label>
-                    <input type="radio" value="jordans" name="would">
-                    <label for="jordans" class="popular">Jordans</label>
-                    <input type="radio" value="nike" name="would">
-                    <label for="nike" class="popular">Nike</label>
-                    <input type="radio" value="other" name="would">
-                    <label for="other-popular" class="popular">Other</label>
-                </div>
-                <div class="checkboxes">
-                    <p>Which of these would you wear for comfort?</p>
-                    <input type="checkbox" name="olu-kai" id="comfort" value="olukai">
-                    <label for="olukai" class="comfort">Olu Kai</label>
-                    <input type="checkbox" name="vivo-barefoot" id="comfort" value="vivo">
-                    <label for="comfort" class="comfort">Vivo Barefoot</label>
-                    <input type="checkbox" name="other-comfort" id="comfort" value="other-comfort">
-                    <label for="other-comfort" class="comfort">Other</label>
-                </div>
-                <div class="textarea">
-                    <label for="textarea">Comments: </label>
-                    <textarea type="text" name="textarea" id="textbox">Got any other ideas? Let us know</textarea>
-                    <input type="submit" value="Submit" id="submit">
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
 
+<header>
+    <h1>Your Name</h1>
+    <p>Web Developer & Designer</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects I'm Working On</a>
+    <a href="#contact">Contact Me</a>
+</nav>
+
+<section id="about">
+    <h2 id="about">About Me</h2>
+    <p>I am a Full Stack developer with a certification in Full Stack Development with a focus on Java,
+         I'm working to get my first Full Stack Dev job by getting certified in many related to Computer Science.</p>
+</section>
+
+<section id="projects">
+    <h2 id="">Projects I'm Working On</h2>
+    
+    <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-details">
+            <h3>Project 1</h3>
+            <p>Description of Project 1 goes here.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project-details">
+            <h3>Project 2</h3>
+            <p>Description of Project 2 goes here.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="project-details">
+            <h3>Project 3</h3>
+            <p>Description of Project 3 goes here.</p>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach out to me through the following channels:</p>
+    <ul>
+        <li>Email: your.email@example.com</li>
+        <li>Phone: +1 123-456-7890</li>
+        <li>Social Media: @yourusername</li>
+    </ul>
+</section>
+
+<section class="joke">
+    <h2>Joke</h2>
+    <p>Why don't scientists trust atoms?</p>
+    <p>Because they make up everything!</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
 </html>
